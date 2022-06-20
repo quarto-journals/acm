@@ -6,6 +6,7 @@ contributes:
     common:
       csl: acm-sig-proceedings.csl
     pdf:
+      number-sections: true
       shift-heading-level-by: -1
       template-partials:
         - partials/before-bib.tex
