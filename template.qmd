@@ -12,9 +12,10 @@ abstract: |
 
   It consists of two paragraphs.
 format:
-    acm-pdf: default
+  acm-pdf: 
+    keep-tex: true  
 bibliography: bibliography.bib
-keep-tex: true
+
 ---
 
 ## Introduction
