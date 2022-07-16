@@ -15,7 +15,6 @@ format:
   acm-pdf: 
     keep-tex: true  
 bibliography: bibliography.bib
-
 ---
 
 ## Introduction
