@@ -12,7 +12,7 @@ abstract: |
 
   It consists of two paragraphs.
 format:
-    quarto-journals/acm-pdf: default
+    acm-pdf: default
 bibliography: bibliography.bib
 keep-tex: true
 ---
