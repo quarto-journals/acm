@@ -1,26 +1,15 @@
+$-- Provides configuration of document metadata for writing the title block. 
+$-- Note that in addition to these templates and partials, Quarto will also make normalized authors and affiliations data available to the template, 
+$-- making is easy to write custom title blocks against a standard schema.
+$--
+$-- %%%% TODO %%%%%
+$-- Customize is needed, otherwise remove this partials to use Quarto default one
+$-- %%%%%%%%%%%%%%%%
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
 $if(title)$
-\title{$title$}
-$endif$
-$if(subtitle)$
-\subtitle{$subtitle$}
+\title$if(short-title)$[$short-title$]$endif${$title$}
 $endif$
 
-
-\numberofauthors{2}
-\author{
-$for(by-author)$
-\alignauthor $by-author.name.literal$ \\
-        \affaddr{$for(by-author.affiliations/first)$$it.name$$endfor$}\\
-       \email{$it.email$}
-\and $endfor$
-}
-
-$if(date)$
-\date{$date$}
-$endif$
-
-%Remove copyright information
-\permission{}
-\conferenceinfo{} {}
-\CopyrightYear{}
-\crdata{}
