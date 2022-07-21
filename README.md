@@ -1,4 +1,4 @@
-# ACM
+# Association of Computing Machinery (ACM)
 
 This Quarto format will help you create documents for the Association of Computing Machinery. To learn more about ACM publications, see [ACM's Information for Authors page](https://www.acm.org/publications/authors/information-for-authors). For more about Quarto and how to use format extensions, see <https://quarto.org/docs/journals/>.
 
