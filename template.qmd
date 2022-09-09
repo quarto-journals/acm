@@ -76,6 +76,12 @@ author:
 
 # acm-specific metadata
 acm-metadata:
+  # comment this out to make submission not-anonymous
+  # anonymous: true
+
+  # comment this out to build a final version
+  final: true
+
   # acm preamble information
   copyright-year: 2018
   acm-year: 2018

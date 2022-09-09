@@ -1,6 +1,6 @@
 title: acmart (ACM) format template
 author: Carlos Scheidegger
-version: 0.0.1
+version: 0.0.2
 contributes:
   format:
     common:
