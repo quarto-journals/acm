@@ -4,7 +4,7 @@ This Quarto format will help you create documents for the Association of Computi
 
 ## Creating a New Article
 
-You can use this as a template to create an article for the Journal of Statistical Software. To do this, use the following command:
+You can use this as a template to create an article for the Association of Computing Machinery. To do this, use the following command:
 
 ```quarto use template quarto-journals/acm```
 
