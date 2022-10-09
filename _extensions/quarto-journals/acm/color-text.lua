@@ -12,14 +12,14 @@ color_span = function(el)
   if color == nil then return el end
   
   -- transform to <span class="color-*"></span>
-  if quarto.doc.isFormat("html") then
+  if quarto.doc.is_format("html") then
     -- remove color attributes
     el.attributes['color'] = nil
     -- use style attribute instead
       el.classes:insert('color-' .. color )
     -- return full span element
     return el
-  elseif quarto.doc.isFormat("pdf") then
+  elseif quarto.doc.is_format("pdf") then
     -- remove color attributes
     el.attributes['color'] = nil
     -- encapsulate in latex code

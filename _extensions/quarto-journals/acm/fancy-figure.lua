@@ -57,7 +57,7 @@ return {
         return image
       end
       description = pandoc.write(pandoc.Pandoc({description}), "latex")
-      if quarto.doc.isFormat("latex") then
+      if quarto.doc.is_format("latex") then
         local caption = pandoc.write(pandoc.Pandoc({image.caption}), "latex")
         local blockStr = "\\begin{figure}\n" ..
           "{\\centering \\includegraphics{" .. image.src .. "}}\n" ..

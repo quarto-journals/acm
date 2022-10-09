@@ -54,7 +54,7 @@ return {
       bibname = pandoc.utils.stringify(meta.bibliography)
     end,
     Pandoc = function(doc)
-      if not quarto.doc.isFormat("latex") then
+      if not quarto.doc.is_format("latex") then
         return doc
       end
 
