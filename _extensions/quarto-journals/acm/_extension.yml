@@ -1,6 +1,6 @@
 title: acmart (ACM) format template
 author: Carlos Scheidegger
-version: 0.0.2
+version: 0.0.3
 quarto-required: ">= 1.2.198"
 contributes:
   format:
