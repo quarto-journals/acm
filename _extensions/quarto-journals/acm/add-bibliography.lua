@@ -46,12 +46,18 @@ function replace_node(blocks, predicate, replacement)
   return nil
 end
 
-local bibname
+local bibname = ''
 
 return {
   {
     Meta = function(meta)
-      bibname = pandoc.utils.stringify(meta.bibliography)
+      for _i, v in ipairs(meta.bibliography) do
+        if bibname ~= '' then
+          bibname = bibname .. ','
+        end
+        bibname = bibname .. pandoc.utils.stringify(v)
+      end
+      
     end,
     Pandoc = function(doc)
       if not quarto.doc.is_format("latex") then
