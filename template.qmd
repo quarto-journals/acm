@@ -76,11 +76,14 @@ author:
 
 # acm-specific metadata
 acm-metadata:
-  # comment this out to make submission not-anonymous
+  # comment this out to make submission anonymous
   # anonymous: true
 
-  # comment this out to build a final version
+  # comment this out to build a draft version
   final: true
+
+  # comment this out to specify detailed document options
+  # acmart-options: sigconf, review  
 
   # acm preamble information
   copyright-year: 2018
