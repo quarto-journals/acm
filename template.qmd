@@ -81,6 +81,9 @@ acm-metadata:
 
   # comment this out to build a final version
   final: true
+  
+  # comment this out to specify detailed document options
+  # acmart-options: sigconf, review
 
   # acm preamble information
   copyright-year: 2018
