@@ -13,6 +13,7 @@ $--     -
 
 $for(by-author)$
   \author{$by-author.name.literal$}
+  $if(by-author.orcid)$\orcid{$by-author.orcid$}$endif$
   $if(by-author.affiliations)$
     $for(by-author.affiliations)$
       \affiliation{%
