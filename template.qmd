@@ -5,6 +5,10 @@ format: acm-pdf
 # which you can eventually use with TAPS
 keep-tex: true
 
+# choose tex program to use later in tex editors, such as TeXShop, TeXWorks, TexStudio, Overleaf, etc.
+# recommend xelatex for unicode support
+tex-program: xelatex
+
 bibliography: bibliography.bib
 
 title: The Name of the Title Is Hope
