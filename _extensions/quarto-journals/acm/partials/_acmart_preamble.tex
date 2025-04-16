@@ -11,13 +11,18 @@
 %% These commands are for a PROCEEDINGS abstract or paper.
 \acmConference[$acm-metadata.conference-acronym$]{$acm-metadata.conference-name$}{$acm-metadata.conference-date$}{$acm-metadata.conference-location$}
 \acmPrice{$acm-metadata.price$}
+%%
+%%  Uncomment \acmBooktitle if the title of the proceedings is different
+%%  from ``Proceedings of ...''!
+%%
+$if(acm-metadata.booktitle)$\acmBooktitle{$acm-metadata.booktitle$}$endif$
 \acmISBN{$acm-metadata.isbn$}
 
 %% Submission ID.
 %% Use this when submitting an article to a sponsored event. You'll
 %% receive a unique submission ID from the organizers
 %% of the event, and this ID should be used as the parameter to this command.
-%%\acmSubmissionID{123-A56-BU3}
+$if(acm-metadata.submission-id)$\acmSubmissionID{$acm-metadata.submission-id$}$endif$
 
 %%
 %% For managing citations, it is recommended to use bibliography
@@ -43,5 +48,6 @@
 %% Uncommenting
 %% the next command will enable that style.
 %%\citestyle{acmauthoryear}
+$if(acm-metadata.citestyle)$\citestyle{$acm-metadata.citestyle$}$endif$
 
 
