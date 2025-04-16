@@ -864,13 +864,13 @@
   % and https://github.com/borisveytsman/acmart/issues/410
   \ifxetex
     \RequirePackage{unicode-math}
-    \setmathfont[Scale=MatchUppercase]{libertinusmath-regular.otf}
+    \setmathfont[Scale=MatchUppercase]{LibertinusMath-Regular.otf}
     \RequirePackage[tt=false]{libertine}
     \setmonofont[StylisticSet=3]{inconsolata}
   \else
     \ifluatex
       \RequirePackage{unicode-math}
-      \setmathfont[Scale=MatchUppercase]{libertinusmath-regular.otf}
+      \setmathfont[Scale=MatchUppercase]{LibertinusMath-Regular.otf}
       \RequirePackage[tt=false]{libertine}
       \setmonofont[StylisticSet=3]{inconsolata}
     \else
