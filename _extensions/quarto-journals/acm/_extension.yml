@@ -35,6 +35,7 @@ contributes:
         - "partials/_acmart_authors.tex"
         - "partials/_acmart_abstract.tex"
       cite-method: natbib
+      biblio-config: false
       format-resources:
         - acmart.cls
         - ACM-Reference-Format.bst
