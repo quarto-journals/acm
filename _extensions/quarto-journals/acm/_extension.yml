@@ -25,7 +25,6 @@ contributes:
       urlcolor: red
       fig-width: 6.5
       fig-height: 4.5
-      biblio-style: te.bst
       documentclass: acmart
       header-includes: |
         \definecolor{mypink}{RGB}{219, 48, 122}
@@ -36,6 +35,10 @@ contributes:
         - "partials/_acmart_authors.tex"
         - "partials/_acmart_abstract.tex"
       cite-method: natbib
+      biblio-config: false
+      format-resources:
+        - acmart.cls
+        - ACM-Reference-Format.bst
     html:
       # define default configuration for the html version of your format
       number-sections: true

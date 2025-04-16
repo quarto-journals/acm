@@ -40,13 +40,13 @@ $for(by-author)$
   $endif$
 $endfor$
 
-$if(acm-metadata.shortauthors)$
-\renewcommand{\shortauthors}{$acm-metadata.shortauthors$}
-$endif$
-
 %% By default, the full list of authors will be used in the page
 %% headers. Often, this list is too long, and will overlap
 %% other information printed in the page headers. This command allows
 %% the author to define a more concise list
 %% of authors' names for this purpose.
 %\renewcommand{\shortauthors}{Trovato et al.}
+$if(acm-metadata.shortauthors)$
+\renewcommand{\shortauthors}{$acm-metadata.shortauthors$}
+$endif$
+
