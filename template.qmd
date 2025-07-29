@@ -144,7 +144,7 @@ acm-metadata:
   # if uncommented, this produces a teaser figure
   # 
   # teaser:
-  #   image: sampleteaser
+  #   image: sample-franklin.png
   #   caption: figure caption
   #   description: teaser description    
 
