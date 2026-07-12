@@ -25,7 +25,7 @@ contributes:
       urlcolor: red
       fig-width: 6.5
       fig-height: 4.5
-      biblio-style: te.bst
+      biblio-style: ACM-Reference-Format
       documentclass: acmart
       header-includes: |
         \definecolor{mypink}{RGB}{219, 48, 122}

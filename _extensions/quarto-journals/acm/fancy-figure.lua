@@ -58,12 +58,7 @@ return {
       end
       description = pandoc.write(pandoc.Pandoc({description}), "latex")
       if quarto.doc.is_format("latex") then
-        local caption = pandoc.write(pandoc.Pandoc({image.caption}), "latex")
-        local blockStr = "\\begin{figure}\n" ..
-          "{\\centering \\includegraphics{" .. image.src .. "}}\n" ..
-          "\\caption{" .. caption .. "}\n\\Description{"
-          .. description .. "}\n\\end{figure}\n"
-        return {pandoc.RawInline("latex", blockStr)}
+        return {image, pandoc.RawInline("latex", "\\Description{" .. description .. "}")}
       else
         image.attr.attributes["alt"] = description
         image.attr.attributes["fig-alt"] = nil
