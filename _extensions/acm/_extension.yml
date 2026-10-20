@@ -36,6 +36,8 @@ contributes:
         - "partials/_acmart_authors.tex"
         - "partials/_acmart_abstract.tex"
       cite-method: natbib
+      # add-bibliography.lua sets the ACM bibliography style itself
+      biblio-config: false
     html:
       # define default configuration for the html version of your format
       number-sections: true
